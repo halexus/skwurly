@@ -12,7 +12,7 @@
 
 static inline int str_compare(const char* a, const char* b) {
 	for(;*a == *b; ++a, ++b)
-		if (*a == '\0' || *b == '\0') return 0;
+		if (*a == '\0') return 0;
 	return *a - *b;
 }
 
